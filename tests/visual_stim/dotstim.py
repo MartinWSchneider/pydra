@@ -13,7 +13,7 @@ class MovingDot(Stimulus):
         self.xpos = 0
         self.ypos = 0
         self.dot = visual.Circle(win=self.window,
-                                 radius=0.1,
+                                 radius=5,
                                  pos=(self.xpos, self.ypos),
                                  units="cm",
                                  fillColor=(1, 1, 1),
@@ -36,8 +36,8 @@ class MovingDot(Stimulus):
 
 
 dot1 = MovingDot()
-dot2 = MovingDot()
+# dot2 = MovingDot()
 wait1 = Wait(2.)
-dot3 = MovingDot()
+# dot3 = MovingDot()
 
-stimulus_list = [dot1, dot2, wait1, dot3]
+stimulus_list = [dot1, wait1, dot1, wait1, dot1]
